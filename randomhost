@@ -8,7 +8,7 @@ __set_random_hostname() {
   local prefix="server"
 
   # set the size of the randomly generated portion
-  local random_size="6"
+  local random_size="2"
 
   # generate new hostname
   if [ -n "$prefix" ]; then
@@ -29,3 +29,4 @@ __set_random_hostname() {
 }
 
 __set_random_hostname
+systemctl disable randomhost
