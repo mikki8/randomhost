@@ -9,7 +9,7 @@ command -v git >/dev/null 2>&1 ||
 }
 
 
-git clone https://github.com/ryanmroth/randomhost.git
+git clone https://github.com/mikki8/randomhost.git
 sudo cp randomhost/randomhost /usr/bin
 sudo chmod +x /usr/bin/randomhost
 sudo cp randomhost/randomhost.service /etc/systemd/system
