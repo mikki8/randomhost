@@ -10,9 +10,9 @@ command -v git >/dev/null 2>&1 ||
 
 
 git clone https://github.com/mikki8/randomhost.git
-sudo cp randomhost/randomhost /usr/bin
+sudo cp -rf randomhost/randomhost /usr/bin
 sudo chmod +x /usr/bin/randomhost
-sudo cp randomhost/randomhost.service /etc/systemd/system
+sudo cp -rf randomhost/randomhost.service /etc/systemd/system
 sudo chmod 644 /etc/systemd/system/randomhost.service
 sudo systemctl daemon-reload 
 sudo systemctl enable randomhost
