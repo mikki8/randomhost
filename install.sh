@@ -20,6 +20,5 @@ sudo cp -rf randomhost.service /etc/systemd/system
 sudo chmod 644 /etc/systemd/system/randomhost.service
 sudo systemctl daemon-reload 
 sudo systemctl enable randomhost
-sudo rm -r randomhost
 cd
 rm -rf "$TMP_DIR"
