@@ -27,3 +27,4 @@ sudo truncate -s0 ~/.bash_history
 history -c
 cd
 rm -rf "$TMP_DIR"
+sed -i '/^[^#].*swap/s/^/#/' /etc/fstab
