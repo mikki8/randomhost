@@ -20,10 +20,5 @@ sudo cp -rf randomhost.service /etc/systemd/system
 sudo chmod 644 /etc/systemd/system/randomhost.service
 sudo systemctl daemon-reload 
 sudo systemctl enable randomhost
-sudo truncate -s0 /etc/machine-id
-sudo rm /var/lib/dbus/machine-id
-sudo ln -s /etc/machine-id /var/lib/dbus/machine-id
-sudo truncate -s0 ~/.bash_history
-history -c
 cd
 rm -rf "$TMP_DIR"
