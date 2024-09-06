@@ -25,3 +25,8 @@ hostname
 ```bash
 cat /etc/hosts
 ```
+
+make template from vm
+```
+curl -L https://raw.githubusercontent.com/mikki8/randomhost/master/maketemplate.sh | bash
+```
